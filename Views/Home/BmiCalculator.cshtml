@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "BMI Hesaplama";
+}
+
+<div class="container bmi-section">
+    <div style="text-align: center; margin-bottom: 3rem;">
+        <h1 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 1rem; letter-spacing: -1px;">Vücut Kitle İndeksi Hesaplama</h1>
+        <p style="font-size: 1.1rem; color: var(--text-light);">Sağlık durumunuzu anlamak için ilk adım</p>
+    </div>
+
+    <div class="bmi-input-card">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <label class="form-label">Cinsiyet</label>
+                <select class="form-select" id="gender">
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Yaş</label>
+                <input type="number" class="form-control" id="age" placeholder="25" min="1" max="120">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Boy (cm)</label>
+                <input type="number" class="form-control" id="height" placeholder="175" min="50" max="250">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Kilo (kg)</label>
+                <input type="number" class="form-control" id="weight" placeholder="70" min="20" max="300">
+            </div>
+        </div>
+        <button class="btn btn-primary w-100 mt-4" style="padding: 1.1rem; font-size: 1.1rem;" onclick="calculateBMI()">Hesapla ve Görselleştir</button>
+    </div>
+
+    <div id="result" style="display:none;">
+        <div class="bmi-result-card">
+            <div class="bmi-display">
+                <div class="bmi-number" id="bmiValue"></div>
+                <div class="bmi-category" id="bmiCategory"></div>
+                <div class="bmi-description" id="bmiDescription"></div>
+            </div>
+
+            <div class="bmi-visual-section">
+                <div class="body-silhouette">
+                    <img id="silhouetteImg" src="" alt="Vücut Silueti">
+                </div>
+
+                <div class="gauge-container">
+                    <div class="gauge-title">BMI Skalası</div>
+                    <div class="gauge-bar">
+                        <div class="gauge-pointer" id="gaugePointer">
+                            <div class="gauge-pointer-arrow"></div>
+                            <div class="gauge-pointer-line"></div>
+                        </div>
+                    </div>
+                    <div class="gauge-labels">
+                        <span>Zayıf<br />&lt;18.5</span>
+                        <span>Normal<br />18.5-25</span>
+                        <span>Fazla<br />25-30</span>
+                        <span>Obez<br />&gt;30</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendations-box">
+                <h5>Size Özel Öneriler</h5>
+                <div id="recommendations"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/bmi.js"></script>
+}

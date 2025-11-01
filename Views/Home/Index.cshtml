@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="hero-section">
+    <img src="~/images/hero-image.jpg" alt="Hero" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <h1>Sağlıklı Yaşam Yolculuğunuz Başlıyor</h1>
+        <p>Bilimsel verilerle desteklenen kişiselleştirilmiş beslenme rehberiniz</p>
+        <a asp-action="BmiCalculator" class="btn btn-hero">BMI Analizini Başlat</a>
+    </div>
+</div>
+
+<div class="features-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="~/images/icon-analytics.png" alt="BMI Analizi">
+                    </div>
+                    <h4>Detaylı BMI Analizi</h4>
+                    <p>Vücut kitle indeksinizi hesaplayın, görselleştirin ve size özel önerilere anında ulaşın</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="~/images/icon-nutrition.png" alt="Beslenme">
+                    </div>
+                    <h4>Bilimsel Beslenme Tavsiyeleri</h4>
+                    <p>Güncel araştırmalara dayalı sağlıklı beslenme önerileri ve pratik uygulamalar</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="~/images/icon-progress.png" alt="İlerleme">
+                    </div>
+                    <h4>Kişiselleştirilmiş Hedefler</h4>
+                    <p>BMI kategorinize uygun beslenme planları ve egzersiz önerileri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="info-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h3>Neden Sağlıklı Beslenme?</h3>
+                    <p>Dengeli beslenme sadece kilo kontrolünden ibaret değil. Genel sağlığınız, enerji seviyeniz ve yaşam kaliteniz için kritik öneme sahip.</p>
+                    <ul>
+                        <li>Enerji seviyenizi yükseltir ve gün boyu dinamik kalırsınız</li>
+                        <li>Bağışıklık sistemini güçlendirir, hastalıklardan korur</li>
+                        <li>Kronik hastalık riskini önemli ölçüde azaltır</li>
+                        <li>Mental sağlığı destekler, odaklanmayı artırır</li>
+                        <li>Yaşlanma sürecini yavaşlatır</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h3>Hemen Başlayın</h3>
+                    <p>Sağlıklı yaşam yolculuğunuza bugün başlamak için sadece birkaç dakikanız var:</p>
+                    <ol>
+                        <li>BMI değerinizi hızlıca hesaplayın</li>
+                        <li>Mevcut durumunuzu görsel olarak değerlendirin</li>
+                        <li>Size özel hazırlanan tavsiyeleri inceleyin</li>
+                        <li>Küçük ama etkili adımlarla ilerlemeye başlayın</li>
+                        <li>Düzenli takip ederek hedeflerinize ulaşın</li>
+                    </ol>
+                    <a asp-action="BmiCalculator" class="btn btn-primary mt-3">Şimdi Başla</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
