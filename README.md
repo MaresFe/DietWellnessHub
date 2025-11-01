@@ -221,11 +221,9 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 👨‍💻 Geliştirici
 
-**[Adınız]**
+**Yakamoz Demir**
 
-- GitHub: [@kullanici-adiniz](https://github.com/kullanici-adiniz)
-- LinkedIn: [Profiliniz](https://linkedin.com/in/profiliniz)
-- Email: email@example.com
+- GitHub: [@MaresFe](https://github.com/MaresFe)
 
 ## 🙏 Teşekkürler
 
